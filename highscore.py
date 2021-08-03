@@ -67,13 +67,6 @@ class ScoreBoard:
             print(i+1,":", getattr(self.board[i], 'name'), getattr(self.board[i], 'score'))
 
 board = ScoreBoard(10)
-player1 = GameEntry("Lily", 89, 4)
-player2 = GameEntry("Rama", 89, 4)
-player3 = GameEntry("Karmila", 79, 4)
-
-score_board.addItem(player1)
-score_board.addItem(player2)
-score_board.addItem(player3)
 
 active = True
 
@@ -94,21 +87,3 @@ while active:
         print(f"Entri baru ditambahkan: {in_score.get_name()} {in_score.get_score()} {in_score.get_time()}")
     else:
         break
-
-
-
-
-
-
-
-
-lily_score = GameEntry("Lily", 89, 4)
-lily_score2 = GameEntry("Lily", 89, 4)
-lily_score3 = GameEntry("Lily", 79, 4)
-
-score_board = ScoreBoard(2)
-score_board.addItem(lily_score)
-score_board.addItem(lily_score2)
-score_board.addItem(lily_score3)
-                    
-print(lily_score.get_score())
